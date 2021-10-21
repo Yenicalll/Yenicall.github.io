@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+   <style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  :root
+  {
+    --black:#333;
+    --green: #017143;
+    --white: #fff;
+    --white2: #fff;
+    --black2:#333;
+    --yellow:#DD2E2E;
+  }
+  section{
+    position:relative;
+    width:100%
+    min-height:100vh;
+    padding: 70px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: var(--white); */
+  }
+  header{
+    position: absolute;
+    top:10px;
+    left: 0;
+    width:100%;
+    padding:10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header.logo{
+    position: relative;
+    max-width: 70px;
+
+  }
+  header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  header ul li
+  {
+    list-style: none;
+    display: flex;
+    margin-left: 30px;
+  }
+  header ul li a{
+    display: inline-block;
+    color:var(--black);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .content{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+  .content .textBox{
+    position: relative;
+    max-width: 600px;
+    z-index: 1;
+    margin-right: 20px;
+    margin-top: 190px;
+
+
+  }
+  .content .textBox h1{
+    font-size: 3em;
+    color:var(--black);
+    line-height: 1.4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .content .textBox h1 span{
+    font-size:1.2em;
+    color:var(--yellow);
+  }
+  .content .textBox a{
+    display:inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: var(--yellow);
+    color: var(--white2);
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+    .content .imgbox
+    {
+      position: relative;
+      width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+    .logo{
+      margin-top: 10px;
+    }
+    .imgbox{
+      margin-bottom: 40px;
+      margin-right: 30px;
+
+    }
+    .imgbox img{
+      margin-bottom: 50px;
+
+    }
+    .icon{
+        margin-bottom: 30px;
+        margin-top: 80px;
+        margin-right: 10px;
+    }
+    .icon2{
+          margin-bottom: 20px;
+      }
+      .icon3{
+            margin-bottom: 10px;
+        }
+    .content .imgbox::before{
+      content: '';
+      position: absolute;
+      width: 350px;
+      height: 370px;
+
+
+    }
+      .content .imgbox img{
+        position: relative;
+        z-index: 1;
+        max-width: 500px;
+        margin-top: 60px;
+      }
+      .themeswitch{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: var(--black);
+        display: inline-flex;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .themeswitch::before{
+        content: 'H';
+        font-family: fontAwesome;
+        color:var(--white);
+        font-size: 20px;
+      }
+      .navigation{
+      margin-bottom: 20px;
+      }
+
+      .choose{
+        color:var(--white);
+        font-size: 1.8em;
+      }
+
+#video{
+  position: absolute;
+     top: 0px;
+     left: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1;
+     overflow: hidden;
+
+}
+
+#music{
+  /* margin-right: 50px; */
+  min-width: 50%;
+  min-height: 50%;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.audio{
+  position: relative;
+
+  z-index: 1;
+  margin-right: 1500px;
+  margin-top: 380px;
+}
+
+
+  </style>
+
+
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+      <title>how to make website darkmode</title>
+  </head>
+  <body>
+<section>
+  <header>
+    <a href="index.html"><img src='./img/logo.png' class="logo"></a>
+    <ul class="navigation">
+      <li><a href="story.html">Story</a></li>
+      <li><a href="win.html">award</a></li>
+
+          <li><a href="j1.html">Jasper</a></li>
+
+
+      <li><a href="k1.html">klaus</a></li>
+      <li><a href="e1.html">Eva</a></li>
+      <li><a href="tr.html">trailer</a></li>
+      <li><span class="themeswitch"></span> </li>
+      </ul>
+  </header>
+  <div class="content">
+<div class="textBox">
+<h1>Hello, It's me <br><span>Santa Claus</span> </h1> <br>
+
+<a href="story.html">Our Story</a>
+</div>
+<div class="imgbox">
+  <!-- <img src="./img/j_n.png"> -->
+
+  <!-- <div class="audio">
+    <audio=width='50' height='530'>
+    <audio src="./audio/ost.mp3" controls autoplay loop id="music" > </audio>
+  </div> -->
+
+
+</div>
+  </div>
+        <video id="video" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="video/t2.mp4" type="video/mp4">
+        </video>
+        <!-- <audio autoplay controls>
+      <audio src="audio/ost.mp3"autoplay loop></audio> -->
+
+
+
+
+</audio>
+</section>
+  </body>
+</html>
