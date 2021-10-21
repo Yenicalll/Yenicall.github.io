@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,22 +18,20 @@
     --white2: #fff;
     --black2:#333;
     --yellow:#DD2E2E;
-  }
-  body{
-    background-image:url('img/back.jpg');
 
+  
+    background-image:url('img/back.jpg');
   }
 
   section{
     position:relative;
     width:100%
-
     min-height:100vh;
     padding: 70px;
     display:flex;
     justify-content: space-around;
     align-items: center;
-
+    /* background: var(--white); */
   }
   header{
     position: absolute;
@@ -49,7 +46,6 @@
   header.logo{
     position: relative;
     max-width: 70px;
-
 
   }
   header ul{
@@ -71,26 +67,48 @@
     font-weight: 500;
     text-decoration: none;
   }
+  .trailer{
+    /* position:fixed;
+    top:50%
+    left:50%
+    transform:translate(-50%,-50%);
+    z-index:10000;
+    width:100%
+    height:100%
+    display:flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%
+    height:100%
+  }
+  .trailer video{
+    max-width: 950px;
+    outline: none;
+    margin-bottom:100px;
+    margin-left:650px;
+      margin-top: 40px;
+  }
   .content{
     position: relative;
     width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 310px;
+    margin-right: 600px;
+    margin-left: 25px;
     z-index: 2;
   }
-
   .content .textBox{
     position: relative;
     max-width: 600px;
     z-index: 1;
     margin-right: 20px;
-    margin-top: 90px;
 
   }
   .content .textBox h1{
     font-size: 3em;
-    color:var(--white);
+    color:var(--black);
     line-height: 1.4em;
     font-weight: 700;
     margin-bottom: 10px;
@@ -109,6 +127,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
+      margin-top: 80px;
   }
     .content .imgbox
     {
@@ -149,21 +168,13 @@
       width: 350px;
       height: 370px;
 
-    }
-    .video{
-      margin-right:20px;
+
     }
       .content .imgbox img{
         position: relative;
         z-index: 1;
         max-width: 500px;
         margin-top: 60px;
-      }
-      .sci li a .fa{
-        font-size: 1.2em;
-      }
-      .sci li a:hover{
-        background: var(--yellow);
       }
       .themeswitch{
         position: relative;
@@ -183,21 +194,20 @@
         color:var(--white);
         font-size: 20px;
       }
-
+      /* .video{
+        margin-right:60px;
+      } */
       .navigation{
       margin-bottom: 20px;
       }
 
-      p{
-        color:var(--white);
-      }
-      .choose{
-        color:var(--white);
-        font-size: 1.8em;
-      }
-
+.choose{
+  color:var(--white);
+  font-size: 1.8em;
+}
 
   </style>
+
 
   <!-- <link rel="stylesheet" href="css/style.css"> -->
       <title>how to make website darkmode</title>
@@ -223,7 +233,7 @@
   </header>
 
   <div class="trailer">
-    <video width='1000' height='600' autoplay controls loop >
+    <video width='2400' height='530' autoplay controls loop >
     <source src='./video/t.mp4' controls="true">
   </div>
 
